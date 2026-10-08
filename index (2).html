@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramavath Venkatesh | Lead SEO, GEO & ASO Growth Strategist</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            green: '#10b981',
+                            purple: '#a855f7',
+                            amber: '#f59e0b',
+                            rose: '#f43f5e',
+                            cyan: '#06b6d4'
+                        },
+                        darkbg: '#060911',
+                        glass: 'rgba(15, 23, 42, 0.65)'
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'glow': 'glow 3s ease-in-out infinite alternate',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        glow: {
+                            '0%': { 'box-shadow': '0 0 15px rgba(14, 165, 233, 0.3)' },
+                            '100%': { 'box-shadow': '0 0 35px rgba(168, 85, 247, 0.6)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #060911;
+            color: #f1f5f9;
+            overflow-x: hidden;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card-hover:hover {
+            background: rgba(30, 41, 59, 0.75);
+            border-color: rgba(56, 189, 248, 0.35);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px -10px rgba(14, 165, 233, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #a855f7 40%, #34d399 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060911;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #38bdf8;
+        }
+    </style>
+</head>
+<body class="selection:bg-brand-500 selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-slate-800/80 px-4 sm:px-8 py-3">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 via-purple-500 to-emerald-400 p-[1px] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                    <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center font-bold text-white heading-font text-lg">
+                        RV
+                    </div>
+                </div>
+                <div>
+                    <span class="font-bold text-base tracking-tight text-white block leading-tight">Ramavath Venkatesh</span>
+                    <span class="text-xs text-brand-400 font-medium flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Lead SEO, GEO & ASO Strategist
+                    </span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-400 transition-colors">Overview</a>
+                <a href="#competencies" class="hover:text-brand-400 transition-colors">Skills & Capabilities</a>
+                <a href="#experience" class="hover:text-brand-400 transition-colors">Experience</a>
+                <a href="#tools" class="hover:text-brand-400 transition-colors">Tech & Data Stack</a>
+                <a href="#ai-simulator" class="hover:text-brand-400 transition-colors flex items-center gap-1.5 text-purple-400 font-semibold">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i> Growth Simulator
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button onclick="toggleModal('bookingModal')" class="flex items-center gap-2 text-xs font-semibold px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-500 to-purple-600 hover:opacity-95 text-white shadow-lg shadow-brand-500/20 transition hover:scale-[1.02]">
+                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                    <span>Book Strategy Call</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="pt-32 pb-20 px-4 sm:px-8 relative overflow-hidden">
+        <div class="absolute top-20 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+        <div class="absolute top-40 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap items-center gap-2.5 mb-6">
+                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card border-brand-500/30 text-brand-400 text-xs font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Lead Organic Growth @ GIVA Jewellery</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-semibold">
+                    <i data-lucide="smartphone" class="w-3.5 h-3.5 text-purple-400"></i>
+                    <span>SEO • GEO • ASO • Programmatic & Data Automation</span>
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight heading-font leading-[1.1] text-white mb-6">
+                        Scaling Web Traffic & <span class="gradient-text">App Installs</span> via SEO & ASO Strategy
+                    </h1>
+                    <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-2xl font-light">
+                        Dual-engine Organic Growth Leader with proven expertise driving <strong class="text-white font-medium">60–70% Web Organic Traffic Uplifts</strong>, programmatic SEO, technical crawl architecture fixes, <strong class="text-white font-medium">App Store & Play Store Dominance</strong>, and <strong class="text-white font-medium">+50% GMC Product Visibility</strong>.
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-4 mb-10">
+                        <a href="#ai-simulator" class="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-500 via-indigo-600 to-purple-600 hover:from-brand-600 hover:to-purple-700 text-white font-semibold text-sm shadow-xl shadow-brand-500/25 transition-all transform hover:-translate-y-0.5">
+                            <i data-lucide="cpu" class="w-5 h-5"></i>
+                            <span>Run Interactive Audit Simulator</span>
+                        </a>
+                        <button onclick="toggleModal('bookingModal')" class="flex items-center gap-2 px-6 py-3.5 rounded-xl glass-card hover:bg-slate-800 text-slate-200 font-semibold text-sm border border-slate-700 transition">
+                            <i data-lucide="phone-call" class="w-4 h-4 text-emerald-400"></i>
+                            <span>Schedule Strategy Consultation</span>
+                        </button>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800/80">
+                        <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-3">Proven Track Record Across Top Growth Brands:</p>
+                        <div class="flex flex-wrap items-center gap-6 opacity-80 text-slate-300 font-semibold text-sm">
+                            <div class="flex items-center gap-2 text-rose-400 font-bold text-base">
+                                <i data-lucide="gem" class="w-5 h-5"></i> GIVA Jewellery
+                            </div>
+                            <span class="text-slate-700">•</span>
+                            <div class="flex items-center gap-2 text-blue-400">
+                                <i data-lucide="graduation-cap" class="w-5 h-5"></i> Internshala
+                            </div>
+                            <span class="text-slate-700">•</span>
+                            <div class="flex items-center gap-2 text-red-500 font-extrabold">
+                                <i data-lucide="gamepad-2" class="w-5 h-5"></i> MPL
+                            </div>
+                            <span class="text-slate-700">•</span>
+                            <div class="flex items-center gap-2 text-amber-400">
+                                <i data-lucide="trophy" class="w-5 h-5"></i> Sportskeeda
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl border-l-4 border-l-purple-500">
+                        <div class="text-purple-400 mb-2 flex items-center justify-between">
+                            <i data-lucide="smartphone" class="w-6 h-6"></i>
+                            <span class="text-xs font-bold text-purple-300 bg-purple-500/20 px-2.5 py-0.5 rounded-full">ASO & CPPs</span>
+                        </div>
+                        <div class="text-3xl font-extrabold heading-font text-white mb-1">App Installs</div>
+                        <p class="text-xs text-slate-400">iOS & Android organic download growth via keyword title stacks & icon/screenshot CVR testing.</p>
+                    </div>
+
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl border-l-4 border-l-brand-400">
+                        <div class="text-brand-400 mb-2 flex items-center justify-between">
+                            <i data-lucide="file-text" class="w-6 h-6"></i>
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full">+50-90%</span>
+                        </div>
+                        <div class="text-3xl font-extrabold heading-font text-white mb-1">On-Page CRO</div>
+                        <p class="text-xs text-slate-400">SERP snippet meta updates, intent mapping & landing page conversion optimizations.</p>
+                    </div>
+
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl border-l-4 border-l-emerald-400">
+                        <div class="text-emerald-400 mb-2 flex items-center justify-between">
+                            <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full">+50% GMC</span>
+                        </div>
+                        <div class="text-3xl font-extrabold heading-font text-white mb-1">GMC Feed</div>
+                        <p class="text-xs text-slate-400">Merchant Center product feed architecture, product schemas & free listing dominance.</p>
+                    </div>
+
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl border-l-4 border-l-amber-400">
+                        <div class="text-amber-400 mb-2 flex items-center justify-between">
+                            <i data-lucide="code-2" class="w-6 h-6"></i>
+                            <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded-full">60-70%</span>
+                        </div>
+                        <div class="text-3xl font-extrabold heading-font text-white mb-1">Tech SEO Uplift</div>
+                        <p class="text-xs text-slate-400">Programmatic SEO, Core Web Vitals, and ChatGPT/Perplexity AI Search citations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competencies" class="py-20 px-4 sm:px-8 border-t border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-3">Capabilities & Skill Matrix</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold heading-font text-white mb-6">
+                    Comprehensive Skill Set Across Web & Mobile Growth
+                </p>
+
+                <div class="flex flex-wrap justify-center p-1.5 rounded-2xl glass-card border border-slate-700/80 gap-1.5 sm:gap-2">
+                    <button onclick="filterCompetencies('all')" id="btn-all" class="px-3 py-2 rounded-xl text-xs font-bold transition bg-brand-500 text-white">All Disciplines</button>
+                    <button onclick="filterCompetencies('aso')" id="btn-aso" class="px-3 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white">ASO & App Growth</button>
+                    <button onclick="filterCompetencies('geo')" id="btn-geo" class="px-3 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white">GEO & AI Search</button>
+                    <button onclick="filterCompetencies('seo')" id="btn-seo" class="px-3 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white">SEO & On-Page</button>
+                    <button onclick="filterCompetencies('tech')" id="btn-tech" class="px-3 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white">Technical & pSEO</button>
+                    <button onclick="filterCompetencies('analytics')" id="btn-analytics" class="px-3 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white">Analytics & Automation</button>
+                    <button onclick="filterCompetencies('ecom')" id="btn-ecom" class="px-3 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white">E-Com & GMC</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="competencyGrid">
+                
+                <!-- ASO Card 1 -->
+                <div class="competency-card aso glass-card glass-card-hover p-6 rounded-2xl border-t-2 border-t-purple-500">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-4">
+                        <i data-lucide="smartphone" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white heading-font">App Store Optimization (ASO)</h3>
+                        <span class="text-[10px] uppercase font-bold text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded">App Store / Play Store</span>
+                    </div>
+                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                        End-to-end Apple App Store (iOS) & Google Play Store metadata optimization for organic install discovery.
+                    </p>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i> Title, Subtitle, Keywords field & Long Description optimization</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i> Custom Product Pages (CPP) & In-App Events (IAE) setup</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i> Category ranking dominance & organic keyword installs</li>
+                    </ul>
+                </div>
+
+                <!-- ASO Card 2 -->
+                <div class="competency-card aso glass-card glass-card-hover p-6 rounded-2xl border-t-2 border-t-purple-500">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-4">
+                        <i data-lucide="image-plus" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white heading-font">App Asset Conversion & A/B Testing</h3>
+                        <span class="text-[10px] uppercase font-bold text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded">Store CVR Lift</span>
+                    </div>
+                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                        Data-driven visual optimization across Store Listing Experiments (Google Play) and Product Page Optimization (PPO on iOS).
+                    </p>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i> App Icon, Feature Graphic, and Screenshot A/B testing</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i> App preview video impact on organic download CVR</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i> Sentiment analysis & Rating/Review prompt workflows</li>
+                    </ul>
+                </div>
+
+                <!-- GEO Card -->
+                <div class="competency-card geo glass-card glass-card-hover p-6 rounded-2xl border-t-2 border-t-purple-400">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-4">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white heading-font">Generative Engine Optimization (GEO)</h3>
+                        <span class="text-[10px] uppercase font-bold text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded">AI Search</span>
+                    </div>
+                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                        Generative Engine Optimization across ChatGPT, Perplexity, Claude, and Google AI Overviews (AIO).
+                    </p>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i> LLM referral tracking & citation modeling</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i> Conversational intent structure & entity graph building</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i> Direct answer citations in ChatGPT Search & Perplexity</li>
+                    </ul>
+                </div>
+
+                <!-- On-Page SEO Card -->
+                <div class="competency-card seo glass-card glass-card-hover p-6 rounded-2xl border-t-2 border-t-brand-500">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center mb-4">
+                        <i data-lucide="file-check-2" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white heading-font">On-Page SEO & Content Intent</h3>
+                        <span class="text-[10px] uppercase font-bold text-brand-400 bg-brand-500/10 px-2 py-0.5 rounded">Core SEO</span>
+                    </div>
+                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                        Precision content intent mapping, internal SILO architecture, and conversion rate optimization (CRO).
+                    </p>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-400"></i> Dynamic meta tag optimization & title tag CTR boosters</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-400"></i> Internal SILO linking & contextual breadcrumb paths</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-400"></i> Content decay audits & snippet CTR optimization (50-90% CRO)</li>
+                    </ul>
+                </div>
+
+                <!-- Tech & Programmatic SEO Card -->
+                <div class="competency-card tech glass-card glass-card-hover p-6 rounded-2xl border-t-2 border-t-amber-500">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-4">
+                        <i data-lucide="code-2" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white heading-font">Technical & Programmatic SEO</h3>
+                        <span class="text-[10px] uppercase font-bold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded">Tech Architecture</span>
+                    </div>
+                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                        Scalable programmatic landing pages, crawl budget protection, and JavaScript rendering fixes.
+                    </p>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i> Core Web Vitals (INP, LCP, CLS) speed engineering</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i> Log file analysis, 301/404 handling & canonical mapping</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i> Programmatic template scaling across 10,000+ landing pages</li>
+                    </ul>
+                </div>
+
+                <!-- Analytics & Automation Card -->
+                <div class="competency-card analytics glass-card glass-card-hover p-6 rounded-2xl border-t-2 border-t-cyan-500">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-4">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white heading-font">SEO Automation & Data Engineering</h3>
+                        <span class="text-[10px] uppercase font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded">Data Analytics</span>
+                    </div>
+                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                        Data-driven organic growth with Python automation, BigQuery SQL data pipelines, and Looker dashboards.
+                    </p>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400"></i> Search Console Indexing API & Python automated meta generators</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400"></i> GA4 custom event tracking & funnel cohort reporting</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400"></i> BigQuery SQL analysis for large-scale Search Console dumps</li>
+                    </ul>
+                </div>
+
+                <!-- E-Com & GMC Card -->
+                <div class="competency-card ecom glass-card glass-card-hover p-6 rounded-2xl border-t-2 border-t-emerald-500">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4">
+                        <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white heading-font">GMC & E-Commerce Schema</h3>
+                        <span class="text-[10px] uppercase font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">E-Com Focus</span>
+                    </div>
+                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                        Google Merchant Center (GMC) product feed optimization, schema architecture, and non-brand keyword targeting.
+                    </p>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Driven ~50% GMC organic shopping visibility growth</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> JSON-LD Schema: Product, Offer, MerchantReturn, FAQ, Breadcrumb</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Faceted navigation crawl management & PLP taxonomy</li>
+                    </ul>
+                </div>
+
+                <!-- Web-to-App & Deep Link Card -->
+                <div class="competency-card aso glass-card glass-card-hover p-6 rounded-2xl border-t-2 border-t-indigo-500">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-4">
+                        <i data-lucide="link" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white heading-font">Web-to-App Deep Linking</h3>
+                        <span class="text-[10px] uppercase font-bold text-indigo-400 bg-indigo-500/10 px-2 py-0.5 rounded">Attribution</span>
+                    </div>
+                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                        Frictionless transition of organic web visitors into app users using AppsFlyer and Branch.io smart banners.
+                    </p>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400"></i> Universal Links (iOS) & App Links (Android) configuration</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400"></i> AppsFlyer Smart Banners CVR optimization</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400"></i> Organic web-to-app install attribution tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Off-Page & E-E-A-T Card -->
+                <div class="competency-card seo glass-card glass-card-hover p-6 rounded-2xl border-t-2 border-t-rose-500">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-400 flex items-center justify-center mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white heading-font">Off-Page Authority & E-E-A-T</h3>
+                        <span class="text-[10px] uppercase font-bold text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded">Authority & Trust</span>
+                    </div>
+                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                        High-authority backlink building, digital PR, unlinked brand mention recovery, and E-E-A-T signal building.
+                    </p>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-rose-400"></i> Unlinked brand mention reclamation & Digital PR campaigns</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-rose-400"></i> High-DR backlink gap analysis & partner outreach</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-rose-400"></i> Google Knowledge Graph entity mapping & author profile authority</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-4 sm:px-8 border-t border-slate-800/60 bg-slate-950/40">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-3">Professional Impact</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold heading-font text-white">Comprehensive SEO & ASO Career Narrative</p>
+                <p class="text-slate-400 text-sm mt-2">Specialized breakdown across On-Page, Technical, Off-Page, Data Engineering & App Store Growth</p>
+            </div>
+
+            <div class="relative border-l-2 border-slate-800 pl-6 sm:pl-10 space-y-12">
+                <!-- Role 1: GIVA -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-brand-400 flex items-center justify-center group-hover:scale-125 transition-transform">
+                        <div class="w-2 h-2 rounded-full bg-brand-400"></div>
+                    </div>
+                    <div class="glass-card p-6 sm:p-8 rounded-2xl">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="text-xs font-bold text-rose-400 uppercase tracking-wider bg-rose-500/10 px-3 py-1 rounded-full border border-rose-500/20">Current Leadership</span>
+                            <span class="text-xs text-slate-400 font-mono">Present</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-white heading-font">Lead Organic Growth Strategist (SEO & ASO)</h3>
+                        <div class="text-sm font-semibold text-brand-400 mb-6 flex items-center gap-2">
+                            <span>GIVA Jewellery</span>
+                            <span class="text-slate-600">|</span>
+                            <span class="text-xs text-slate-400">D2C E-Commerce & Mobile App Scale</span>
+                        </div>
+
+                        <div class="space-y-6">
+                            <!-- On-Page SEO -->
+                            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-400 mb-2 flex items-center gap-2">
+                                    <i data-lucide="file-check-2" class="w-4 h-4"></i> On-Page SEO & Content Strategy
+                                </h4>
+                                <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="dot" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>Intent-Driven Product Page Optimization:</strong> Restructured Title tags, H1/H2 hierarchy, meta descriptions, and non-brand keywords ("silver rings", "gold pendants", "solitaire earrings") across 10,000+ D2C PLPs and PDPs.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="dot" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>Internal Linking SILO Architecture:</strong> Implemented contextual breadcrumbs and automated cross-linking blocks, elevating high-margin category pages in Google rankings.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="dot" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>Snippet & Schema Optimization:</strong> Engineered JSON-LD structured data (`Product`, `Offer`, `AggregateRating`, `FAQPage`, `BreadcrumbList`) resulting in enriched rich snippet visibility and elevated CTRs.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Technical SEO -->
+                            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-2 flex items-center gap-2">
+                                    <i data-lucide="code-2" class="w-4 h-4"></i> Technical SEO & E-Commerce Infrastructure
+                                </h4>
+                                <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="dot" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>GMC Feed Optimization:</strong> Re-architected Google Merchant Center product feeds, standardized title attributes and product categories, driving a <strong class="text-white">+50% uplift in GMC organic shopping impressions</strong>.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="dot" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>Core Web Vitals & Crawl Budget Control:</strong> Resolved INP latency, image payload sizes, canonical tags, and faceted navigation parameter bloat using Screaming Frog and Search Console log audits.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="dot" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>AI Search & GEO Optimization:</strong> Built entity relationships and structured data graphs ensuring brand mentions and product citations across ChatGPT Search, Perplexity, and Google AI Overviews.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Off-Page SEO & ASO -->
+                            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-2 flex items-center gap-2">
+                                    <i data-lucide="smartphone" class="w-4 h-4"></i> Off-Page SEO & App Store Optimization (ASO)
+                                </h4>
+                                <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="dot" class="w-4 h-4 text-purple-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>ASO Keyword & Store Experiments:</strong> Optimized iOS App Store & Google Play metadata (Title, Subtitle, Keyword Field, Long Description), leading to category leadership for organic jewellery apps.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="dot" class="w-4 h-4 text-purple-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>App Conversion Rate (CVR) Testing:</strong> Executed A/B tests on store icons, preview videos, and promotional screenshots, drastically boosting organic install conversion.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="dot" class="w-4 h-4 text-purple-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>Off-Page Authority Building:</strong> Managed high-quality backlink outreach, unlinked brand mention recovery, and digital PR campaigns to reinforce Domain Authority (DA) and E-E-A-T signals.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role 2: Internshala -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-slate-600 flex items-center justify-center group-hover:scale-125 transition-transform">
+                        <div class="w-2 h-2 rounded-full bg-slate-500"></div>
+                    </div>
+                    <div class="glass-card p-6 sm:p-8 rounded-2xl">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="text-xs font-bold text-blue-400 uppercase tracking-wider bg-blue-500/10 px-3 py-1 rounded-full">EdTech & High Volume Search</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white heading-font">Senior SEO & Organic Growth Strategist</h3>
+                        <div class="text-sm font-semibold text-brand-400 mb-6 flex items-center gap-2">
+                            <span>Internshala</span>
+                            <span class="text-slate-600">|</span>
+                            <span class="text-xs text-slate-400">High-Volume Programmatic SEO & ASO</span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-2">Technical & Programmatic On-Page Scale</h4>
+                                <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>60–70% Organic Traffic Uplift:</strong> Diagnosed and resolved massive site-wide technical bottlenecks, eliminating indexation traps, dynamic URL duplicate parameters, and 4xx status leaks.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>Programmatic Landing Pages:</strong> Designed scalable internal linking and metadata templates for tens of thousands of skill, location, and role-based internship landing pages.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>Snippet Optimization (50-90% CRO):</strong> Updated SERP titles, FAQ schema tags, and call-to-actions to maximize click-through rate (CTR) and conversion to active applicants.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-2">Off-Page Authority & EdTech ASO</h4>
+                                <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>EdTech App Store Dominance:</strong> Optimized Play Store metadata for high-converting queries like "internships app" and "online training", significantly increasing organic download velocity.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 shrink-0 mt-0.5"></i>
+                                        <span><strong>Authority Link Acquisition:</strong> Led educational scholarship outreach, university backlink acquisition, and partner press mentions to solidify domain rating.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role 3: MPL -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-slate-600 flex items-center justify-center group-hover:scale-125 transition-transform">
+                        <div class="w-2 h-2 rounded-full bg-slate-500"></div>
+                    </div>
+                    <div class="glass-card p-6 sm:p-8 rounded-2xl">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="text-xs font-bold text-red-400 uppercase tracking-wider bg-red-500/10 px-3 py-1 rounded-full">Gaming Scale</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white heading-font">SEO Specialist & Web-to-App Growth</h3>
+                        <div class="text-sm font-semibold text-brand-400 mb-4">Mobile Premier League (MPL)</div>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="chevron-right" class="w-5 h-5 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Technical On-Page & Schema:</strong> Optimized real-time gaming landing pages, game rules schemas, and high-volume competitive keyword clusters.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="chevron-right" class="w-5 h-5 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Web-to-App Deep Linking:</strong> Implemented AppsFlyer Smart Banners and Universal Links to seamlessly transition organic web landing traffic into app installations.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 4: Sportskeeda -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-slate-600 flex items-center justify-center group-hover:scale-125 transition-transform">
+                        <div class="w-2 h-2 rounded-full bg-slate-500"></div>
+                    </div>
+                    <div class="glass-card p-6 sm:p-8 rounded-2xl">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider bg-amber-500/10 px-3 py-1 rounded-full">Media Publishing</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white heading-font">SEO Analyst & Fast-Indexing Growth</h3>
+                        <div class="text-sm font-semibold text-brand-400 mb-4">Sportskeeda</div>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="chevron-right" class="w-5 h-5 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Real-Time Fast Indexing:</strong> Accelerated Google News & Google Discover crawl speed through News XML sitemaps, AMP / web speed enhancements, and dynamic headline A/B testing.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="chevron-right" class="w-5 h-5 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Live Schema Tagging:</strong> Implemented `LiveBlogPosting` and `NewsArticle` schema markup for instant live-match visibility in top stories carousels.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="py-20 px-4 sm:px-8 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-3">Tech, Data & Intelligence Stack</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold heading-font text-white">Enterprise SEO, ASO, Automation & Data Platforms</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Data Automation 1 -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-emerald-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">PY</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">Python for SEO</div>
+                        <div class="text-xs text-slate-400">Automated Meta & APIs</div>
+                    </div>
+                </div>
+
+                <!-- Data Automation 2 -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-emerald-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">BQ</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">BigQuery & SQL</div>
+                        <div class="text-xs text-slate-400">Search Data Warehousing</div>
+                    </div>
+                </div>
+
+                <!-- Data Automation 3 -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-emerald-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">LS</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">Looker Studio</div>
+                        <div class="text-xs text-slate-400">Automated Dashboards</div>
+                    </div>
+                </div>
+
+                <!-- Analytics 1 -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold">GA4</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">Google Analytics 4</div>
+                        <div class="text-xs text-slate-400">Cohort & Funnel Tracking</div>
+                    </div>
+                </div>
+
+                <!-- ASO Tool 1 -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-purple-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold">ST</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">Sensor Tower</div>
+                        <div class="text-xs text-slate-400">ASO & App Market Intel</div>
+                    </div>
+                </div>
+
+                <!-- ASO Tool 2 -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-purple-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold">MA</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">Mobile Action</div>
+                        <div class="text-xs text-slate-400">App Keyword Tracking</div>
+                    </div>
+                </div>
+
+                <!-- App Store Consoles -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-purple-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold">ASC</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">App Store & Play Console</div>
+                        <div class="text-xs text-slate-400">PPO & Store Listing A/B</div>
+                    </div>
+                </div>
+
+                <!-- Web-to-App Tool -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-cyan-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold">AF</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">AppsFlyer / Branch</div>
+                        <div class="text-xs text-slate-400">Deep Link Attribution</div>
+                    </div>
+                </div>
+
+                <!-- SEO Tool 1 -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-brand-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center font-bold">SF</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">Screaming Frog</div>
+                        <div class="text-xs text-slate-400">Technical Crawling</div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Crawler -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-brand-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center font-bold">LM</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">Lumar / DeepCrawl</div>
+                        <div class="text-xs text-slate-400">Enterprise Site Auditing</div>
+                    </div>
+                </div>
+
+                <!-- SEO Tool 2 -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-brand-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold">SE</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">SEMrush</div>
+                        <div class="text-xs text-slate-400">Keyword Research</div>
+                    </div>
+                </div>
+
+                <!-- Merchant Tool -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-4 hover:border-emerald-500/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">GMC</div>
+                    <div>
+                        <div class="font-bold text-white text-sm">Google Merchant Center</div>
+                        <div class="text-xs text-slate-400">Feed & Free Listings</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-simulator" class="py-20 px-4 sm:px-8 border-t border-slate-800/60 relative">
+        <div class="max-w-5xl mx-auto">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-purple-500/30 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-semibold mb-3">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-purple-400"></i> Multi-Mode Growth Diagnostic
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold heading-font text-white mb-3">
+                        Simulate Your Web SEO & App ASO Readiness
+                    </h2>
+                    <p class="text-slate-300 text-sm">
+                        Select a diagnostic mode to audit web domain SEO/GEO or mobile App Store visibility.
+                    </p>
+                </div>
+
+                <div class="flex justify-center mb-8">
+                    <div class="inline-flex p-1 rounded-xl bg-slate-900 border border-slate-800 gap-1 text-xs font-semibold">
+                        <button onclick="setAuditMode('web')" id="audit-mode-web" class="px-4 py-2 rounded-lg bg-brand-500 text-white transition">🌐 Web Search & GEO Audit</button>
+                        <button onclick="setAuditMode('aso')" id="audit-mode-aso" class="px-4 py-2 rounded-lg text-slate-400 hover:text-white transition">📱 App ASO Audit</button>
+                    </div>
+                </div>
+
+                <form id="auditForm" onsubmit="runSimulator(event)" class="space-y-4 max-w-2xl mx-auto">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1.5" id="labelInput1">Target Website Domain</label>
+                            <input type="text" id="input1" placeholder="e.g. giva.co" required 
+                                class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-400 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1.5" id="labelInput2">Target Key Search / App Term</label>
+                            <input type="text" id="input2" placeholder="e.g. silver jewellery app" required 
+                                class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-purple-400 transition">
+                        </div>
+                    </div>
+                    <button type="submit" id="auditBtn" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-500 via-purple-600 to-emerald-500 text-white font-bold text-sm shadow-xl hover:opacity-95 transition flex items-center justify-center gap-2">
+                        <i data-lucide="play-circle" class="w-5 h-5"></i>
+                        <span>Generate Multi-Pillar Growth Report</span>
+                    </button>
+                </form>
+
+                <div id="auditResults" class="hidden mt-10 pt-8 border-t border-slate-800 space-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <div class="text-xs text-slate-400 uppercase tracking-widest" id="resTypeHeader">Diagnostic Summary For</div>
+                            <div class="text-lg font-bold text-white heading-font" id="resultDomain">domain.com</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-xs text-slate-400">Optimization Score:</span>
+                            <span class="text-2xl font-extrabold heading-font text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-xl border border-emerald-500/20" id="overallScore">88/100</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="diagnosticGrid">
+                    </div>
+
+                    <div class="text-center pt-2">
+                        <button onclick="toggleModal('bookingModal')" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs transition">
+                            <i data-lucide="check-check" class="w-4 h-4"></i>
+                            <span>Discuss Audit Findings with Ramavath Venkatesh</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="bookingModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="glass-card max-w-lg w-full p-6 sm:p-8 rounded-3xl border border-brand-500/30 relative">
+            <button onclick="toggleModal('bookingModal')" class="absolute top-6 right-6 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-500 to-purple-600 text-white flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <i data-lucide="phone-call" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white heading-font">Book Strategy Call</h3>
+                <p class="text-xs text-slate-300 mt-1">Direct consultation with Ramavath Venkatesh for SEO, GEO & ASO Growth.</p>
+            </div>
+
+            <form onsubmit="handleBooking(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Full Name</label>
+                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-400">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Work Email</label>
+                    <input type="email" required placeholder="john@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-400">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Primary Focus (SEO / GEO / ASO / GMC / Data Pipelines)</label>
+                    <textarea rows="3" required placeholder="Describe your web organic traffic, AI search citations, or Play/App Store install targets..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-400"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-500 to-purple-600 text-white font-bold text-sm shadow-xl hover:opacity-95 transition">
+                    Confirm Strategy Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="py-12 px-4 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-slate-400">
+                © 2026 Ramavath Venkatesh. Lead SEO, GEO & ASO Growth Strategist.
+            </div>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="#about" class="hover:text-brand-400 transition">About</a>
+                <a href="#competencies" class="hover:text-brand-400 transition">Capabilities</a>
+                <a href="#experience" class="hover:text-brand-400 transition">Experience</a>
+                <a href="#ai-simulator" class="hover:text-brand-400 transition">Growth Audit</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentAuditMode = 'web';
+
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+
+        function toggleModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.toggle('hidden');
+            }
+        }
+
+        function filterCompetencies(category) {
+            const cards = document.querySelectorAll('.competency-card');
+            const btns = ['all', 'aso', 'geo', 'seo', 'tech', 'analytics', 'ecom'];
+
+            btns.forEach(b => {
+                const btnEl = document.getElementById('btn-' + b);
+                if (btnEl) {
+                    btnEl.className = (b === category) 
+                        ? "px-3 py-2 rounded-xl text-xs font-bold transition bg-brand-500 text-white"
+                        : "px-3 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white";
+                }
+            });
+
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function setAuditMode(mode) {
+            currentAuditMode = mode;
+            const btnWeb = document.getElementById('audit-mode-web');
+            const btnAso = document.getElementById('audit-mode-aso');
+            const l1 = document.getElementById('labelInput1');
+            const l2 = document.getElementById('labelInput2');
+            const i1 = document.getElementById('input1');
+            const i2 = document.getElementById('input2');
+
+            if (mode === 'web') {
+                btnWeb.className = "px-4 py-2 rounded-lg bg-brand-500 text-white transition";
+                btnAso.className = "px-4 py-2 rounded-lg text-slate-400 hover:text-white transition";
+                l1.textContent = "Target Website Domain";
+                l2.textContent = "Target Key Search Term";
+                i1.placeholder = "e.g. giva.co";
+                i2.placeholder = "e.g. silver rings online";
+            } else {
+                btnAso.className = "px-4 py-2 rounded-lg bg-purple-600 text-white transition";
+                btnWeb.className = "px-4 py-2 rounded-lg text-slate-400 hover:text-white transition";
+                l1.textContent = "App Store / Play Store App Package";
+                l2.textContent = "Primary App Search Keyword";
+                i1.placeholder = "e.g. com.giva.jewellery";
+                i2.placeholder = "e.g. jewellery shopping app";
+            }
+        }
+
+        function runSimulator(e) {
+            e.preventDefault();
+            const val1 = document.getElementById('input1').value.trim() || 'target';
+            const val2 = document.getElementById('input2').value.trim() || 'keyword';
+            const btn = document.getElementById('auditBtn');
+
+            btn.disabled = true;
+            btn.innerHTML = `<i data-lucide="loader" class="w-5 h-5 animate-spin"></i> Running ${currentAuditMode.toUpperCase()} Diagnostic...`;
+            lucide.createIcons();
+
+            setTimeout(() => {
+                document.getElementById('resultDomain').textContent = `${val1} (${val2})`;
+                
+                const grid = document.getElementById('diagnosticGrid');
+                if (currentAuditMode === 'web') {
+                    grid.innerHTML = `
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-semibold text-slate-300">1. GEO & LLM Search Citation</span>
+                                <span class="text-xs font-bold text-purple-400">High Citation</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2 mb-2"><div class="bg-purple-500 h-2 rounded-full" style="width: 82%"></div></div>
+                            <p class="text-xs text-slate-400">Strong conversational entity structure. Schema microdata will boost ChatGPT referral sources.</p>
+                        </div>
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-semibold text-slate-300">2. SERP CRO & Title Optimization</span>
+                                <span class="text-xs font-bold text-amber-400">+45% CVR Opportunity</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2 mb-2"><div class="bg-amber-400 h-2 rounded-full" style="width: 68%"></div></div>
+                            <p class="text-xs text-slate-400">SERP meta snippet testing can unlock instant high-intent organic traffic.</p>
+                        </div>
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-semibold text-slate-300">3. GMC & Shopping Schema</span>
+                                <span class="text-xs font-bold text-brand-400">88% Feed Quality</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2 mb-2"><div class="bg-brand-400 h-2 rounded-full" style="width: 88%"></div></div>
+                            <p class="text-xs text-slate-400">Product structured data is well-configured for free listing dominance.</p>
+                        </div>
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-semibold text-slate-300">4. Technical Health & CWV</span>
+                                <span class="text-xs font-bold text-emerald-400">Optimal</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2 mb-2"><div class="bg-emerald-400 h-2 rounded-full" style="width: 92%"></div></div>
+                            <p class="text-xs text-slate-400">Core Web Vitals within green thresholds with clean crawl efficiency.</p>
+                        </div>
+                    `;
+                } else {
+                    grid.innerHTML = `
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-semibold text-slate-300">1. App Store Title & Keyword Density</span>
+                                <span class="text-xs font-bold text-purple-400">Strong Indexing</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2 mb-2"><div class="bg-purple-500 h-2 rounded-full" style="width: 85%"></div></div>
+                            <p class="text-xs text-slate-400">Primary keyword present in Title & Subtitle. High density in Play Store description.</p>
+                        </div>
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-semibold text-slate-300">2. Screenshot & Icon A/B Testing</span>
+                                <span class="text-xs font-bold text-amber-400">+35% CVR Lift</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2 mb-2"><div class="bg-amber-400 h-2 rounded-full" style="width: 62%"></div></div>
+                            <p class="text-xs text-slate-400">Store listing screenshots require localized offer callouts and feature badges.</p>
+                        </div>
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-semibold text-slate-300">3. Custom Product Pages (CPP)</span>
+                                <span class="text-xs font-bold text-cyan-400">Configured</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2 mb-2"><div class="bg-cyan-400 h-2 rounded-full" style="width: 80%"></div></div>
+                            <p class="text-xs text-slate-400">CPPs aligned with paid/organic campaign traffic to boost download intent.</p>
+                        </div>
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-semibold text-slate-300">4. Web-to-App Universal Links</span>
+                                <span class="text-xs font-bold text-emerald-400">90% Coverage</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2 mb-2"><div class="bg-emerald-400 h-2 rounded-full" style="width: 90%"></div></div>
+                            <p class="text-xs text-slate-400">AppsFlyer / Branch smart banners route mobile web visitors seamlessly.</p>
+                        </div>
+                    `;
+                }
+
+                document.getElementById('auditResults').classList.remove('hidden');
+                btn.disabled = false;
+                btn.innerHTML = `<i data-lucide="play-circle" class="w-5 h-5"></i> Generate Multi-Pillar Growth Report`;
+                lucide.createIcons();
+
+                document.getElementById('auditResults').scrollIntoView({ behavior: 'smooth' });
+            }, 1000);
+        }
+
+        function handleBooking(e) {
+            e.preventDefault();
+            alert('Thank you! Strategy request received. Ramavath Venkatesh will contact you within 24 hours.');
+            toggleModal('bookingModal');
+        }
+    </script>
+</body>
+</html>
